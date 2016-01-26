@@ -8,17 +8,17 @@ section2_image_text: "For this is the way God loved the world: He gave his one a
 section2_image_text_tag: "JOHN 3:16"
 sunday:
   - category: Sunday School
-    date: 9:15 a.m.
+    time: 9:15 a.m.
   - category: Sunday Worship
-    date: 10:30 a.m.
+    time: 10:30 a.m.
   - category: Discipleship Training
-    date: 5:00 p.m.
+    time: 5:00 p.m.
   - category: Sunday Night Worship
-    date: 6:00 p.m.
+    time: 6:00 p.m.
 
 wednesday:
   - category: Wednesday Activities
-    date: 6:00 a.m.
+    time: 6:00 a.m.
 
 ---
 {% include header.html %}
@@ -47,13 +47,13 @@ wednesday:
         <div class="half-column">
           <h3 class="text-center">Sunday</h3>
           {% for item in page.sunday %}
-            <p>{{ item.category }} | {{ item.date }}</p>
+            <p>{{ item.category }} | {{ item.time }}</p>
           {% endfor %}
         </div>
         <div class="half-column">
           <h3 class="text-center">Wednesday</h3>
           {% for item in page.wednesday %}
-            <p>{{ item.category }} | {{ item.date }}</p>
+            <p>{{ item.category }} | {{ item.time }}</p>
           {% endfor %}
         </div>
     </div>
