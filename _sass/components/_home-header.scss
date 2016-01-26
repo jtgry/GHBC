@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Home Banner
+   ========================================================================== */
+
+.home-header{
+  @include banner;
+  min-height: 80vh;
+  max-height: 80%;
+}
+.home-header-content{
+  padding: 0 1%;
+}
+.home-header-inner{
+  padding: 1em;
+  margin: 0 auto;
+
+}
+
+.home-header-title{
+  color: $color-white;
+  font-size: 2rem;
+  font-family: $base-font-family;
+  letter-spacing: .2em;
+  margin-bottom: 0em;
+  padding: 0;
+  text-transform: uppercase;
+}
+.home-header-subtitle{
+  color: $color-white;
+  font-size: .8rem;
+  font-family: $base-font-family;
+  letter-spacing: .4em;
+  margin: 0 auto;
+  margin-top: -.7em;
+}
+.home-header-tag{
+  color: $color-white;
+  font-size: .8rem;
+  font-family: $base-font-family;
+  font-style: italic;
+  letter-spacing: .2em;
+  padding: 1em 0;
+  border-top: .20rem solid $color-white;
+  border-bottom: .20rem  solid $color-white;
+  margin: 0 auto;
+}
+
+
+.home-header .buttonAlt{
+  color: $color-white;
+  border-color: $color-white;
+  margin-top: 3em;
+}
+
+.home-header .buttonAlt:hover, .buttonAlt:focus, .buttonAlt:active {
+  background-color: $brand-color;
+  border-color: $brand-color;
+  color: $color-white;
+}
+@include phone {
+  .home-header-title{
+    font-size: 2rem;
+  }
+  .home-header-subtitle{
+    font-size: .8rem;
+  }
+}
+@include tablet {
+  .home-header-title{
+    font-size: 4rem;
+  }
+  .home-header-subtitle{
+    font-size: 1.3rem;
+  }
+}
+@include laptop {
+  .home-header{
+    background-attachment: fixed;
+  }
+  .home-header-title{
+    font-size: 5rem;
+  }
+  .home-header-subtitle{
+    font-size: 1.7rem;
+  }
+}
+@include desktop {
+  .home-header-title{
+    font-size: 6rem;
+  }
+  .home-header-subtitle{
+    font-size: 3.3rem;
+  }
+  .home-header-tag{
+    font-size: 1.4rem;
+    max-width: 47rem;
+  }
+}

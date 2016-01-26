@@ -1,0 +1,14 @@
+.page-header{
+  @include banner;
+  min-height: 60vh;
+  max-height: 60%;
+}
+@include laptop {
+  .page-header{
+    background-attachment: fixed;
+  }
+}
+
+.page-title{
+  color: $color-white;
+}

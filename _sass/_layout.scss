@@ -1,0 +1,56 @@
+.content-block{
+  margin: 0 auto;
+  padding: 2em 1%;
+}
+
+.content-block:first-of-type{
+  padding: 2em 0 7em;
+}
+
+h2.content-block-title{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: .5em;
+}
+@include phone {
+  h2.content-block-title{
+    font-size: 2rem;
+  }
+}
+@include tablet {
+  h2.content-block-title{
+    font-size: 3rem;
+  }
+}
+@include laptop {
+  h2.content-block-title{
+    font-size: 3.5rem;
+  }
+}
+.content-block-hr{
+  border-top: $brand-color solid;
+  border-bottom: $brand-color solid;
+  max-width: 4rem;
+}
+
+.content-image{
+  @include banner;
+  min-height: 40vh;
+  max-height: 40%;
+
+}
+.content-image p{
+  color: $color-white;
+  margin: 0;
+}
+h3.content-image-text{
+  font-size: 1.5rem;
+  font-family: $base-font-family;
+  color: $color-white;
+}
+@include laptop {
+  .content-image{
+    background-attachment: fixed;
+  }
+
+}

@@ -1,0 +1,80 @@
+---
+layout: default
+title: Home
+section1_header: welcome
+section1_text: Welcome to the ministry of Good Hope Baptist Church! We have a deep desire to care for all people, and grow together in our knowledge of Christ. We have a passion for people of all walks of life, and we want to provide the best opportunity for you to worship and connect with Christ in a real and authentic relationship. We hope to see you very soon!
+section2_image: /images/field.jpg
+section2_image_text: "For this is the way God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life."
+section2_image_text_tag: "JOHN 3:16"
+sunday:
+  - category: Sunday School
+    date: 9:15 a.m.
+  - category: Sunday Worship
+    date: 10:30 a.m.
+  - category: Discipleship Training
+    date: 5:00 p.m.
+  - category: Sunday Night Worship
+    date: 6:00 p.m.
+
+wednesday:
+  - category: Wednesday Activities
+    date: 6:00 a.m.
+
+---
+{% include header.html %}
+<section id="{{ page.section1_header }}" class="page-content">
+  <div class="content-block">
+    <h2 class="content-block-title 1">Welcome</h2>
+    <hr class="content-block-hr 1">
+    <div class="container 1">
+      <p>{{ page.section1_text }}</p>
+    </div>
+  </div>
+</section>
+<section class="content-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ page.section2_image }});">
+  <div class="vertical">
+    <div class="container">
+      <h3 class="content-image-text">{{ page.section2_image_text }}</h3>
+      <p>- {{ page.section2_image_text_tag }}</p>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="content-block">
+    <h2 class="content-block-title 1">Services</h2>
+    <hr class="content-block-hr 1">
+    <div class="container 1">
+        <div class="half-column">
+          <h3 class="text-center">Sunday</h3>
+          {% for item in page.sunday %}
+            <p>{{ item.category }} | {{ item.date }}</p>
+          {% endfor %}
+        </div>
+        <div class="half-column">
+          <h3 class="text-center">Wednesday</h3>
+          {% for item in page.wednesday %}
+            <p>{{ item.category }} | {{ item.date }}</p>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+</section>
+{% for service in site.services %}
+<div class="row">
+    <div class="half-column {% if service.image_alignment == 'left' %} pull-left {% else %} pull-right {% endif %} 1">
+      <div class="vertical">
+        <object type="image/svg+xml" data="{{ service.image_path }}">Your browser does not support SVG</object>
+      </div>
+    </div>
+    <div class="half-column brand-color">
+      <div class="vertical">
+        <h2 class="content-block-title">{{ service.title }}</h2>
+        <div class="container">
+          {{ service.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</section>
+{% include contact-form.html %}

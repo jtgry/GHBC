@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+.nav-bar{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 9999;
+  background-color: $background-color;
+  border-top: .2rem $brand-color solid;
+
+}
+.logo {
+  float: left;
+  width: 45px;
+  padding-top: 10px;
+  padding-left: 20px;
+  display: block;
+}
+.logo-text{
+  position: absolute;
+  padding-top: 2px;
+  padding-left: 80px;
+  font-size: 1.4rem;
+  font-family: $base-font-family;
+  letter-spacing: .2em;
+  float: left;
+  color: $text-color;
+}
+.logo-sub-text{
+  position: absolute;
+  padding-left: 80px;
+  padding-top: 37px;
+  font-size: .78rem;
+  font-family: $base-font-family;
+  letter-spacing: .4em;
+  color: $text-color;
+}
+.nav-items{
+  position: absolute;
+  top: 1.51em;
+  right: 1.5em;
+  display: none;
+}
+
+.nav-items ul li{
+  display: inline;
+  list-style: none;
+  padding: 0 1em;
+  text-transform: uppercase;
+
+}
+.nav-items ul li a{
+  font-family: $alt-font-family;
+  color: $text-color;
+  font-size: $small-font-size;
+}
+.nav-items ul li a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(250, 250, 250, 1) 50%);
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  background-position: 0 83px;
+}
+.nav-items ul li a.active {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(250, 250, 250, 1) 50%);
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  background-position: 0 83px;
+}
+@include laptop {
+  .nav-items{
+    display: block;
+  }
+}

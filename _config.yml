@@ -1,0 +1,16 @@
+# Site settings
+title: Good Hope Baptist Church
+email: tgray.it@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to the ministry of Good Hope Baptist Church! We have a deep desire to care for all people, and grow together in our knowledge of Christ.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://goodhopebaptist.org/" # the base hostname & protocol for your site
+twitter_username: jtgry
+github_username:  jtgry
+
+# Build settings
+markdown: kramdown
+
+collections:
+  - services
+  - projects
