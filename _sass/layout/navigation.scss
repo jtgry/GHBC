@@ -19,22 +19,24 @@
 }
 .logo-text{
   position: absolute;
-  padding-top: 2px;
+  padding-top: 4px;
   padding-left: 80px;
-  font-size: 1.4rem;
+  font-size: 21.6px;
   font-family: $base-font-family;
   letter-spacing: .2em;
   float: left;
   color: $text-color;
+  display: none;
 }
 .logo-sub-text{
   position: absolute;
   padding-left: 80px;
-  padding-top: 37px;
-  font-size: .78rem;
+  padding-top: 39px;
+  font-size: 12px;
   font-family: $base-font-family;
   letter-spacing: .4em;
   color: $text-color;
+  display: none;
 }
 .nav-items{
   position: absolute;
@@ -71,6 +73,12 @@
 }
 @include laptop {
   .nav-items{
+    display: block;
+  }
+  .logo-text{
+    display: block;
+  }
+  .logo-sub-text{
     display: block;
   }
 }

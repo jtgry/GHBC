@@ -1,7 +1,9 @@
 /* ==========================================================================
    Buttons
    ========================================================================== */
+
 .button,
+a.button,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -11,7 +13,7 @@ input[type="button"]{
   border-color: $brand-color;
   border-style: solid;
   border-width: 3px;
-  color: #FFFFFF;
+  color: $color-white;
   cursor: pointer;
   display: inline-block;
   font-style: normal;
@@ -26,18 +28,33 @@ input[type="button"]{
   padding: 1.2em 3em 1.2em;
   margin: 0 20px;
 }
-.button:hover, .button:focus, .button:active {
-    background-color: $brand-color;
-    border-color: $brand-color;
+.button:hover,
+.button:focus,
+.button:active,
+a.button:hover,
+a.button:focus,
+a.button:active{
+    background-color: $brand-color-dark;
+    border-color: $brand-color-dark;
 }
-.buttonAlt{
+.button-alt:hover,
+.button-alt:focus,
+.button-alt:active
+a.button-alt:hover,
+a.button-alt:focus,
+a.button-alt:active{
   background-image: none;
-  background-color: rgba(255, 255, 255, 0);
-  color: rgba(0,0,0,0.5);
-  border: solid 3px rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0);
+  color: $text-color;
+  border: solid 3px $grey-color;
 }
-.buttonAlt:hover, .buttonAlt:focus, .buttonAlt:active {
+.button-alt:hover,
+.button-alt:focus,
+.button-alt:active
+a.button-alt:hover,
+a.button-alt:focus,
+a.button-alt:active{
   background-color: $brand-color;
   border-color: $brand-color;
-  color: #fff;
+  color: $color-white;
 }

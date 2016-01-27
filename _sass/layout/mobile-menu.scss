@@ -92,7 +92,7 @@
   display: block;
   width: 100%;
   padding: 1em 0;
-  font-size: 100%;
+  font-size: 1.4rem;
   background-image: none;
   text-decoration: none;
   font-weight: 300;
@@ -100,7 +100,7 @@
 }
 
 .mobile-nav li a:hover {
-    font-size: 130%;
+    font-size: 1.5rem;
     background: $brand-color;
     color: #fafafa;
 }

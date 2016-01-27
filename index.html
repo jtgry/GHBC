@@ -18,7 +18,7 @@ sunday:
 
 wednesday:
   - category: Evening Worship
-    date: 6:00 p.m
+    time: 6:00 p.m
 ---
 {% include header.html %}
 <section id="{{ page.section1_header }}" class="page-content">
@@ -27,14 +27,17 @@ wednesday:
     <hr class="content-block-hr 1">
     <div class="container 1">
       <p>{{ page.section1_text }}</p>
+      <div class="text-center">
+        <a class="button" href="">Learn More</a>
+      </div>
     </div>
   </div>
 </section>
 <section class="content-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ page.section2_image }});">
   <div class="vertical">
     <div class="container">
-      <h3 class="content-image-text">{{ page.section2_image_text }}</h3>
-      <p>- {{ page.section2_image_text_tag }}</p>
+      <h3 class="content-image-text 3">{{ page.section2_image_text }}</h3>
+      <p class="4">- {{ page.section2_image_text_tag }}</p>
     </div>
   </div>
 </section>

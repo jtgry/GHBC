@@ -5,7 +5,8 @@
 .home-header{
   @include banner;
   min-height: 80vh;
-  max-height: 80%;
+  max-height: 80vh;
+  height: 80vh;
 }
 .home-header-content{
   padding: 0 1%;
@@ -46,23 +47,28 @@
 }
 
 
-.home-header .buttonAlt{
+.home-header .button-alt{
   color: $color-white;
   border-color: $color-white;
+  background-color: rgba(0,0,0,0);
   margin-top: 3em;
 }
 
-.home-header .buttonAlt:hover, .buttonAlt:focus, .buttonAlt:active {
+.home-header .button-alt:hover, .buttonAlt:focus, .buttonAlt:active {
   background-color: $brand-color;
   border-color: $brand-color;
   color: $color-white;
 }
 @include phone {
   .home-header-title{
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .home-header-subtitle{
-    font-size: .8rem;
+    font-size: 1.2rem;
+  }
+  .home-header-tag{
+    font-size: 1rem;
+    max-width: 20rem;
   }
 }
 @include tablet {
@@ -70,7 +76,11 @@
     font-size: 4rem;
   }
   .home-header-subtitle{
-    font-size: 1.3rem;
+    font-size: 2.2rem;
+  }
+  .home-header-tag{
+    font-size: 1rem;
+    max-width: 32rem;
   }
 }
 @include laptop {
@@ -81,7 +91,11 @@
     font-size: 5rem;
   }
   .home-header-subtitle{
-    font-size: 1.7rem;
+    font-size: 2.75rem;
+  }
+  .home-header-tag{
+    font-size: 1.2rem;
+    max-width: 40rem;
   }
 }
 @include desktop {

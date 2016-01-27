@@ -7,20 +7,15 @@ html{
 }
 @include phone {
   html{
-    font-size: 70%;
+    font-size: 80%;
   }
 }
 @include tablet {
   html{
-    font-size: 80%;
-  }
-}
-@include laptop {
-  html{
     font-size: 90%;
   }
 }
-@include desktop {
+@include laptop {
   html{
     font-size: 100%;
   }
@@ -77,7 +72,7 @@ a{
   background-position: 0 16px;
 
   &:visited {
-      color: darken($brand-color, 15%);
+      color: $text-color;
   }
 
   &:hover {
