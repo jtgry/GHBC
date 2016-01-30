@@ -4,8 +4,8 @@
   float: left;
 }
 .half-column:first-of-type{
-  border-right: solid 2px $grey-color-light;
-  margin-right: -2px;
+  border-right: none;
+  margin-right: 0;
 }
 .half-column{
   display: table;
@@ -33,6 +33,14 @@
     width: 50%;
     min-height: 30em;
   }
+  .half-column:first-of-type{
+    display: table;
+    font-size: 1rem;
+    width: 50%;
+    min-height: 30em;
+    border-right: solid 2px $grey-color-light;
+    margin-right: -2px;
+  }
 }
 
 .column-container{
@@ -45,11 +53,17 @@
   min-height: 40em;
   max-height: 40em;
   height: 40em;
-  width: 50%;
+  width: 100%;
   float: right;
 }
+
 .column-image:first-of-type{
   float: left;
+}
+@include laptop {
+  .column-image{
+    width: 50%;
+  }
 }
 h2.column-header{
   margin-bottom: .5em;
