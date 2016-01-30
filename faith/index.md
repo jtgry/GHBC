@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Faith
-page_header: /images/field.jpg
+page_header: /images/river.jpg
 ---
 Our mission at Good Hope Baptist Church is “Beyond These Walls.” This is developed by having a vision outside of ourselves. We grow this vision through our mission to exalt God’s greatness, evangelize God’s people, equip God’s people and express God’s love through our Lord Jesus Christ.
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: welcome
 title: Welcome
 page_header: /images/corn.jpg
 ---

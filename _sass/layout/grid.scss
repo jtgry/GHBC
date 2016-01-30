@@ -34,3 +34,38 @@
     min-height: 30em;
   }
 }
+
+.column-container{
+  padding: 0 15%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.column-image{
+  @include banner;
+  min-height: 40em;
+  max-height: 40em;
+  height: 40em;
+  width: 50%;
+  float: right;
+}
+.column-image:first-of-type{
+  float: left;
+}
+h2.column-header{
+  margin-bottom: .5em;
+}
+p.column-title{
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-family: $alt-font-family;
+}
+p.column-text{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-size: 1rem;
+}
+
+#staff .half-column{
+    min-height: 40em;
+}

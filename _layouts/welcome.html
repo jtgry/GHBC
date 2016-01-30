@@ -1,0 +1,61 @@
+---
+layout: default
+sections:
+  - section_name: "staff"
+    style: "two columns"
+    columns:
+      - column_header: "Kenneth Hill"
+        column_image: "/images/staff/kennethhill.jpg"
+        column_title: "Pastor"
+        column_text: "Graduated from Florida Baptist Theological College with a Bachelor Degree in Theology. Masters and Doctrinal Studies from Andersonville Baptist Seminary. Pastor of Good Hope Baptist Church for twenty years. Married to Jacquelyn with two children Jake Hill and Kristen Cannon."
+        column_button: "/welcome/timlawrence"
+      - column_header: "Tim Lawrence"
+        column_image: "/images/staff/tim_vicki.jpg"
+        column_title: "Worship Minister || Student Minister"
+        column_text: "I am the worship minister and student minister here with the Good Hope family. I have thoroughly enjoyed serving here for the past 16 years in a bi-vocational position. I’m also one of the managers for a Montgomery business.  I’ve been married for 35 years to a precious lady, Vicki. We have one daughter, Courtney, who is married, where she and her husband, Matthew, are serving the Lord in Gulf Shores, AL. My desire in ministry is two-fold: to disciple and mentor those who know the Lord in our church, to be all that the Lord wants them to be, so that our community of believers can grow together and make a difference for the Kingdom; and to communicate the Gospel to those outside of our body of believers, who don’t know Jesus, as their Lord and Savior."
+        column_button: "/welcome/timlawrence"
+
+---
+<header class="page-header" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ page.page_header }});">
+  <h1 class="page-title vertical 4">{{ page.title }}</h1>
+</header>
+<div class="container">
+  <article class="page-content">
+    {{ content }}
+  </article>
+</div>
+{% for item in page.sections %}
+  <section id="{{ item.section_name }}">
+    <div class="content-block">
+      <h2 class="content-block-title 1">{{ item.section_name }}</h2>
+      <hr class="content-block-hr 1">
+      <div class="container 1">
+        {% if item.style == "one column" %}
+          <p>{{ item.text }}</p>
+          {% if item.button %}
+            <div class="text-center">
+              <a class="button" href="{{ item.button }}">Learn More</a>
+            </div>
+          {% endif %}
+        {% endif %}
+      </div>
+      {% if item.style == "two columns" %}
+      <div>
+        {% for column in item.columns %}
+          <div class="half-column column-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ column.column_image }}">
+          </div>
+          <div class="half-column">
+            <div class="column-container text-center">
+              <h2 class="column-header">{{ column.column_header }}</h2>
+              <p class="column-title">{{ column.column_title }}</p>
+              <p class="column-text">{{ column.column_text }}</p>
+              <a class="button" href="{{ item.button }}">Learn More</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+  </section>
+{% endfor %}
