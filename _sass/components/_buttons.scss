@@ -12,13 +12,13 @@ input[type="button"]{
   background-color: $brand-color;
   border-color: $brand-color;
   border-style: solid;
-  border-width: 3px;
+  border-width: 2px;
   color: $color-white;
   cursor: pointer;
   display: inline-block;
   font-style: normal;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: .8rem;
   font-family: $alt-font-family;
   text-align: center;
   text-decoration: none;
@@ -57,4 +57,16 @@ a.button-alt:active{
   background-color: $brand-color;
   border-color: $brand-color;
   color: $color-white;
+}
+
+@include phone {
+  .button,
+  a.button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"]{
+    font-size: 1rem;
+    border-width: 3px;
+  }
 }
