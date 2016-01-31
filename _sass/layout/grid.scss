@@ -13,7 +13,7 @@
   float: left;
   width: 100%;
   padding: 0% 0;
-  min-height: 30em;
+  min-height: 300px;
 }
 .half-column p{
   font-family: $base-font-family;
@@ -31,38 +31,44 @@
     display: table;
     font-size: 1rem;
     width: 50%;
-    min-height: 30em;
+    min-height: 600px;
   }
   .half-column:first-of-type{
     display: table;
     font-size: 1rem;
     width: 50%;
-    min-height: 30em;
+    min-height: 600px;
     border-right: solid 2px $grey-color-light;
     margin-right: -2px;
   }
 }
 
 .column-container{
-  padding: 0 15%;
+  padding: 5% 8%;
   margin: 0 auto;
   margin-top: 3em;
 }
 .column-image{
   @include banner;
-  min-height: 40em;
-  max-height: 40em;
+  min-height: 300px;
+  max-height: 300px;
   height: 40em;
   width: 100%;
   float: right;
 }
-
 .column-image:first-of-type{
   float: left;
 }
 @include laptop {
   .column-image{
     width: 50%;
+    min-height: 600px;
+    max-height: 600px;
+  }
+  .column-container{
+    padding: 0 15%;
+    margin: 0 auto;
+    margin-top: 3em;
   }
 }
 h2.column-header{
@@ -78,8 +84,4 @@ p.column-text{
   margin-top: 0;
   margin-bottom: 2em;
   font-size: 1rem;
-}
-
-#staff .half-column{
-    min-height: 40em;
 }
