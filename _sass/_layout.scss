@@ -1,3 +1,23 @@
+.page-content{
+  padding: 3em 0;
+
+}
+
+/* .page-content p:first-of-type:first-letter {
+  font-size: 3.4em;
+  padding: .37em .1em 0 0;
+  margin: 0;
+  float: left;
+  line-height: .5;
+  font-weight: 400;
+	}
+*/
+/* Clear Drop cap on blockquote*/
+.page-content blockquote p:first-of-type:first-letter {
+font-size: 1.7rem;
+padding: 0; float: none;
+}
+
 .content-block{
   margin: 0 auto;
   padding: 2em 1%;
@@ -9,22 +29,22 @@
 
 h2.content-block-title{
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 1rem;
   margin-bottom: .5em;
 }
 @include phone {
   h2.content-block-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @include tablet {
   h2.content-block-title{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @include laptop {
   h2.content-block-title{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 .content-block-hr{

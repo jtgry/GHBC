@@ -9,13 +9,13 @@ $base-font-family: 'crimson', serif;
 $alt-font-family:       'montserratregular', sans-serif;
 $base-font-size:    16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.8;
+$base-line-height: 1.7;
 $base-letter-spacing: .1em;
 $secondary-font-family: 'Crimson', serif;
 $header-font:      'montserratregular', sans-serif;
 $spacing-unit:     30px;
 
-$text-color:       rgba(0, 0, 0, 0.7);
+$text-color:       rgba(0, 0, 0, 0.75);
 $background-color: rgba(250, 250, 250, 1);
 $brand-color:      rgba(107, 147, 98, 1);
 $brand-color-dark:  darken($brand-color, 6%);
@@ -51,7 +51,5 @@ $desktop-width:          1600px;
         "layout/projects",
         "layout/forms",
         "layout/contact-form";
-
-
 
 @import "utils/helpers";

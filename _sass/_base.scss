@@ -35,10 +35,10 @@ body{
   -moz-font-feature-settings: "liga" on;
 }
 p,a,ul,li,ol,ul,tr,td{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 p {
-  font-family: $secondary-font-family;
+  font-family: $base-font-family;
   color: $text-color;
   margin-top:2em;
   margin-bottom:2em;
@@ -48,21 +48,6 @@ p {
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
 }
-.page-content p:first-of-type:first-letter {
-  font-size: 3.4em;
-  padding: .37em .1em 0 0;
-  margin: 0;
-  float: left;
-  line-height: .6;
-  font-weight: 400;
-	}
-
-/* Clear Drop cap on blockquote*/
-.page-content blockquote p:first-of-type:first-letter {
-font-size: 1.7rem;
-padding: 0; float: none;
-}
-
 a{
   color: $brand-color;
   text-decoration: none;
@@ -119,20 +104,26 @@ h6{
    ========================================================================== */
 
 ul {
-  list-style: circle inside}
+  list-style: none;
+}
 ol {
-  list-style: decimal inside; }
+  list-style: decimal inside;
+}
 ol, ul {
   padding-left: 0;
-  margin-top: 0; }
+  margin-top: 0;
+}
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+}
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  letter-spacing: .05em;
+  font-size: 80%;
+}
 
 /* ==========================================================================
    Tables
@@ -164,12 +155,24 @@ blockquote{
   margin-right: 0px;
   text-align: center;
   color: $text-color;
-  font-size: 1.7rem;
-  line-height: 1.5em;
+  font-size: 3rem;
+
+}
+blockquote p{
+  font-size: 1.4rem;
+  width: 100%;
+  margin: 1em 0;
+}
+@include laptop {
+  blockquote p{
+    font-size: 2rem;
+    width: 140%;
+    margin-left: -20%;
+  }
 }
 hr {
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
   border-width: 0;
   border-top: 1px solid $brand-color solid;

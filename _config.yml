@@ -12,5 +12,19 @@ github_username:  jtgry
 markdown: kramdown
 
 collections:
-  - services
-  - projects
+    ministries:
+      output: true
+
+sunday:
+  - category: Sunday School
+    time: 9:15 a.m.
+  - category: Sunday Worship
+    time: 10:30 a.m.
+  - category: Discipleship Training
+    time: 5:00 p.m.
+  - category: Sunday Night Worship
+    time: 6:00 p.m.
+
+wednesday:
+  - category: Evening Worship
+    time: 6:00 p.m

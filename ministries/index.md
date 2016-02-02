@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ministries
 title: Ministries
 page_header: /images/sundaynightlive.jpg
 ---

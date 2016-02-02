@@ -1,7 +1,6 @@
 .projects{
   width: 100%;
   float: left;
-  padding: 4em 0;
 }
 .project-item{
   float: left;
@@ -10,24 +9,21 @@
   display:block;
   position:relative;
 }
-.project-item img{
-
-}
 .project-item .project-item-overlay{
-  background: $brand-color;
+  background: #000;
   color: $color-white;
   height: 98%;
   width: 100%;
-  opacity: 0;
+  background-color: rgba(0,0,0,0.4);
   top: 0;
   left: 0;
   position: absolute;
   padding: 0;
-  transition: opacity .5s;
+  transition: background-color .5s;
 }
 .project-item:hover .project-item-overlay{
-  opacity: .9;
-  transition: opacity .5s;
+  background-color: rgba(0,0,0,0.6);
+  transition: background-color .5s;
 }
 
 .project-item-overlay-wrapper{
@@ -38,19 +34,18 @@
 .project-item-overlay-container{
   border: solid .2em $color-white;
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 70%;
   padding: 2em;
   text-align: center;
 }
 h3.project-item-title{
   color: $color-white;
-  font-size: 1rem;
+  font-size: 2rem;
 
 }
 .project-item-overlay-container p{
-  font-family: 'Montserrat', sans-serif;
   color: $color-white;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 @include laptop {
   .project-item{

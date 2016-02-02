@@ -7,19 +7,7 @@ section1_text: "Welcome to the ministry of Good Hope Baptist Church! We have a d
 section2_image: "/images/field.jpg"
 section2_image_text: "For this is the way God loved the world: He gave his one and only Son, so that everyone who believes in him will not perish but have eternal life."
 section2_image_text_tag: "JOHN 3:16"
-sunday:
-  - category: Sunday School
-    time: 9:15 a.m.
-  - category: Sunday Worship
-    time: 10:30 a.m.
-  - category: Discipleship Training
-    time: 5:00 p.m.
-  - category: Sunday Night Worship
-    time: 6:00 p.m.
 
-wednesday:
-  - category: Evening Worship
-    time: 6:00 p.m
 ---
 {% include header.html %}
 <section id="{{ page.section1_header }}" class="page-content">
@@ -44,40 +32,24 @@ wednesday:
 </section>
 <section id="services">
   <div class="content-block">
-    <h2 class="content-block-title 1">Services</h2>
+    <h2 class="content-block-title 1">Our Service Times</h2>
     <hr class="content-block-hr 1">
     <div class="container 1">
         <div class="half-column">
           <h3 class="text-center">Sunday</h3>
-          {% for item in page.sunday %}
+          {% for item in site.sunday %}
             <p>{{ item.category }} | {{ item.time }}</p>
           {% endfor %}
         </div>
         <div class="half-column">
           <h3 class="text-center">Wednesday</h3>
-          {% for item in page.wednesday %}
+          {% for item in site.wednesday %}
             <p>{{ item.category }} | {{ item.time }}</p>
           {% endfor %}
         </div>
     </div>
   </div>
 </section>
-{% for service in site.services %}
-<div class="row">
-    <div class="half-column {% if service.image_alignment == 'left' %} pull-left {% else %} pull-right {% endif %} 1">
-      <div class="vertical">
-        <object type="image/svg+xml" data="{{ service.image_path }}">Your browser does not support SVG</object>
-      </div>
-    </div>
-    <div class="half-column brand-color">
-      <div class="vertical">
-        <h2 class="content-block-title">{{ service.title }}</h2>
-        <div class="container">
-          {{ service.content }}
-        </div>
-      </div>
-    </div>
-  </div>
-{% endfor %}
+
 </section>
 {% include contact-form.html %}

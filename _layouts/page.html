@@ -7,6 +7,9 @@ layout: default
 </header>
 <div class="container">
   <article class="page-content">
+    {% if page.sub_title %}
+      <h5 class="sub-title text-center">{{ page.sub_title }}</h5>
+    {% endif %}
     {{ content }}
   </article>
 

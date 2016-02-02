@@ -27,14 +27,16 @@ layout: default
       {% if item.style == "two columns" %}
       <div>
         {% for column in item.columns %}
-          <div class="half-column column-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ column.column_image }}">
+          <div class="half-column column-image" style="background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ column.image_path }}">
           </div>
           <div class="half-column">
             <div class="column-container text-center">
-              <h2 class="column-header">{{ column.column_header }}</h2>
-              <p class="column-title">{{ column.column_title }}</p>
-              <p class="column-text">{{ column.column_text }}</p>
-              <a class="button" href="{{ item.button }}">Learn More</a>
+              <h2 class="column-header">{{ column.header }}</h2>
+              <p class="column-title">{{ column.title }}</p>
+              <p class="column-text">{{ column.text }}</p>
+              {% if column.button %}
+                <a class="button" href="{{ item.button }}">Learn More</a>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
