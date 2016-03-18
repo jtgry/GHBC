@@ -14,7 +14,7 @@ markdown: kramdown
 collections:
     ministries:
       output: true
-      permalink: pretty
+      permalink: /ministries/:path/
 sunday:
   - category: Sunday School
     time: 9:15 a.m.
