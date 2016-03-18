@@ -7,14 +7,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://goodhopebaptist.org/" # the base hostname & protocol for your site
 twitter_username: jtgry
 github_username:  jtgry
-permalink: pretty
+
 # Build settings
 markdown: kramdown
 
 collections:
     ministries:
       output: true
-
+      permalink: pretty
 sunday:
   - category: Sunday School
     time: 9:15 a.m.
