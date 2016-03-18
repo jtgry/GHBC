@@ -26,8 +26,12 @@ h2.contact-header{
   font-size: 3.5rem;
   color:#fafafa;
 }
-form .input-group {
+form .input-group:first-of-type {
   border-top: 2px solid rgba(255,255,255,0.9);
+  color:#fafafa;
+}
+form .input-group {
+  border-bottom: 2px solid rgba(255,255,255,0.9);
   color:#fafafa;
 }
 
