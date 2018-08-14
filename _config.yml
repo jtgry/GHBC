@@ -12,9 +12,12 @@ github_username:  jtgry
 markdown: kramdown
 
 collections:
-    ministries:
-      output: true
-      permalink: /ministries/:path/
+  pages:
+    output: true
+    permalink: /:path/
+  ministries:
+    output: true
+    permalink: /ministries/:path/
 sunday:
   - category: Sunday School
     time: 9:15 a.m.
